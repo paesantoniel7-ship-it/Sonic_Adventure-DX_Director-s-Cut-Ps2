@@ -19,6 +19,8 @@ Apesar de alguns avanços iniciais, o projeto acabou travando por conta de erros
 
 ❌ O main.js começa bem, mas falha com lógica mais elaborada.
 
+Com tudo isso em mente, dá pra se concluir que não dá para fazer nem uma fase de teste, então acabei deixando isso de lado e disponibilizando pra vocês, caso consigam, des da programação em javascript e assets quem eu estava pensando em programar, como a gameplay do Sonic por exemplo.
+
 📁 Estrutura de Pastas
 A organização dos arquivos segue uma lógica modular para facilitar testes e futuras expansões:
 
