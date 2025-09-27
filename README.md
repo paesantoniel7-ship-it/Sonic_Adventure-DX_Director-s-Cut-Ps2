@@ -53,3 +53,5 @@ Testar fora do PCSX2, talvez em um wrapper JS nativo.
 Ou simplesmente deixar isso aqui como um registro de tentativa 😅
 
 Quem quiser modificar por aqui mesmo, manda o seu arquivo ou dica aqui mesmo que eu autorizo
+
+Link do assets:https://drive.google.com/drive/folders/1Iytuii4eME4mieFqLmUxp_9VkF74LKXc?usp=drive_link
