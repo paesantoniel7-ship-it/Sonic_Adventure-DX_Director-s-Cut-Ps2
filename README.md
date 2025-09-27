@@ -49,3 +49,5 @@ Migrar para outro ambiente mais estável (talvez a Tyra Engine) ou Esperar Athen
 Testar fora do PCSX2, talvez em um wrapper JS nativo.
 
 Ou simplesmente deixar isso aqui como um registro de tentativa 😅
+
+link do assets:https://drive.google.com/drive/folders/1Iytuii4eME4mieFqLmUxp_9VkF74LKXc?usp=sharing
