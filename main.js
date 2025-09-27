@@ -1,23 +1,39 @@
 const font = new Font("default");
+const logo = new Image("sega.png"); // carrega a imagem do logo
 
-let frame = 0; // contador de frames
+let frame = 0;
+let musicPlaying = false;
 
 os.setInterval(() => {
-  Screen.clear(); // Limpa a tela
+  Screen.clear();
 
   // Título
+  font.setStyle("default");
   font.print(50, 200, "Sonic Adventure");
 
-  // Texto piscando (mostra em alguns frames, esconde em outros)
-  if (Math.floor(frame / 30) % 2 === 0) {  
-    // 30 = ~meio segundo se estiver rodando a 60fps
+  // Texto piscando
+  if (Math.floor(frame / 30) % 2 === 0) {
     font.print(220, 400, "Pressiona Start");
   }
 
-  // Autor no topo
+  // Autor
   font.print(200, 30, "Autor: Antoniel");
 
-  Screen.flip(); // Atualiza a tela
+  // Música de fundo
+  if (!musicPlaying) {
+    Media.playMusic("Title Screen.wav", true);
+    musicPlaying = true;
+  }
 
-  frame++; // avança o contador
+  // Exibe a imagem do logo
+  logo.draw(180, 50); // x=180, y=50 → ajusta conforme o tamanho da imagem
+
+  Screen.flip();
+  frame++;
 }, 0);
+
+// Intro depois de 10s
+os.setTimeout(() => {
+  Media.stopMusic();
+  Media.playVideo("intro.mp4");
+}, 10000);
